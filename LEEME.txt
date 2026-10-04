@@ -1,0 +1,23 @@
+PUBLICACIÓN RESTRINGIDA — DASHBOARD DESA
+
+Suba el contenido de esta carpeta a un servidor web con HTTPS y autenticación.
+No publique este paquete en un sitio de acceso público: contiene coordenadas exactas de viviendas positivas.
+El archivo de datos también debe quedar protegido por la misma autenticación.
+No incluye nombres, direcciones, documentos ni datos de residentes.
+
+Para uso local: sirva la carpeta con un servidor estático (por ejemplo python -m http.server 8000).
+Abra la dirección local en su navegador. Se requiere internet para Leaflet y las teselas OpenStreetMap.
+No se requiere backend de análisis ni base de datos.
+
+Datos: 367112 visitas, 113 establecimientos, 02/01/2026 a 03/10/2026.
+Códigos confirmados: 1 inspeccionada, 2 cerrada, 3 deshabitada, 4 renuente.
+Tratadas: viviendas inspeccionadas con alguna columna TQ/TF mayor que cero.
+Se agregan datos por provincia, actividad, establecimiento y fecha.
+Mapa: todos los registros positivos con coordenadas válidas; X=latitud, Y=longitud.
+No se certifica exactitud geográfica ni pertenencia de coordenadas al departamento.
+Total viviendas = total de visitas registrado, no padrón ni viviendas únicas.
+La positividad por recipiente P/I no es la proporción P/total de positivos: se muestran ambas.
+El índice aédico clasifica >=2% como alto riesgo.
+
+Dependencias: Leaflet 1.9.4, BSD-2-Clause; cartografía OpenStreetMap con atribución visible.
+Para actualizaciones, regenerar las agregaciones y sustituir los datos del paquete; no contiene carga automática de CSV.
